@@ -1,7 +1,14 @@
-/* ===== Couleurs générales de la page Contact ===== */
+/* ===== Reset de base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Contours généraux de la page Contact ===== */
 .contact-intro, .contact-form, .don {
     max-width: 600px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 20px auto;
     padding: 20px;
 }
 
