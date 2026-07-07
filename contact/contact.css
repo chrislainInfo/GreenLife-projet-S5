@@ -1,0 +1,156 @@
+/* ===== Couleurs générales de la page Contact ===== */
+.contact-intro, .contact-form, .don {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+}
+
+/* ===== Section 1: Introduction ===== */
+.contact-intro h1 {
+    color: #2E5339;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-intro p {
+    color: #4A4A4A;
+    line-height: 1.6;
+}
+
+/* ===== Section 2: Formulaire de contact ===== */
+.contact-form {
+    background-color: #F2F8F3;
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    color: #2E5339;
+    margin-bottom: 15px;
+}
+
+/* On empile les champs avec Flexbox en column */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form label {
+    color: #2E5339;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #A8C5AE;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.consentement {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #3E8E41;
+}
+
+/* ===== Section 3: Don ===== */
+.don {
+    background-color: #E7F2E9;
+    border-radius: 10px;
+    border: 1px solid #A8C5AE;
+}
+
+.don h2 {
+    color: #2E5339;
+    margin-bottom: 10px;
+}
+
+.don p {
+    color: #4A4A4A;
+    line-height: 1.6;
+}
+
+.don-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.don-form fieldset {
+    border: 1px solid #A8C5AE;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.don-form legend {
+    color: #2E5339;
+    font-weight: bold;
+    padding: 0 6px;
+}
+
+.don-form label {
+    display: block;
+    color: #2E5339;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.don-form select, .don-form input[type="text"],
+.don-form input[type="email"], .don-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #A8C5AE;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.type-don {
+    display: flex;
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.recu-fiscal {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.transparence {
+    font-style: italic;
+    color: #4A4A4A;
+    font-size: 13px;
+}
+
+.btn-don {
+    background-color: #2E7D32;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-don:hover {
+    background-color: #1B5E20;
+}
