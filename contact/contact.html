@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact ~ Green Life</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="../layout.css">
+</head>
+<body>
+    <main>
+        <!-- Section 1: Introduction -->
+        <section class="contact-intro">
+            <h1>Contactez-nous</h1>
+            <p>
+                Une question, une envie de collaborer, 
+                ou simplement envie d'en savoir plus 
+                sur nos actions ? Écrivez-nous, nous 
+                vous répondrons dans les plus brefs délais.
+            </p>
+        </section>
+
+        <!-- Section 2: Formulaire de contact -->
+        <section class="contact-form">
+            <h2>Envoyez-nous un message</h2>
+            <form>
+                <label for="nom">Nom(s) et prénom(s)</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Adresse email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="sujet">Sujet du message</label>
+                <select id="sujet" name="sujet">
+                    <option value="partenariat">Partenariats / Entreprises</option>
+                    <option value="benevolat">Bénévolat</option>
+                    <option value="presse">Presse / Média</option>
+                    <option value="autre">Autre demande</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="7" required></textarea>
+
+                <div class="consentement">
+                    <input type="checkbox" id="consentement-donnees" name="consentement-donnees" required>
+                    <label for="consentement-donnees">J'accepte que mes données soient utilisées pour traiter ma demande</label>
+                </div>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+        <!-- Section 3: Formulaire pour les dons -->
+        <section class="don">
+            <h2>Faire un don</h2>
+            <p>Green Life fonctionne grâce à la générosité de ses soutiens. Chaque don, qu'il soit financier ou matériel, nous aide à planter davantage d'arbres et à sensibiliser plus de familles.</p>
+
+            <form class="don-form">
+                <fieldset>
+                    <legend>Montant du don</legend>
+                    <label for="montant-don">Choisissez un montant</label>
+                    
+                    <select id="montant-don" name="montant-don">
+                        <option value="2500">2 500 FCFA</option>
+                        <option value="10000">10 000 FCFA</option>            
+                        <option value="25000">25 000 FCFA</option>
+                        <option value="autre">Autre montant</option>
+                    </select>
+
+                    <label for="montant-personnalise">Si "Autre montant" sélectionné, précisez (FCFA)</label>
+                    <input type="number" id="montant-personnalise" name="montant-personnalise" min="1" placeholder="Ex : 15000">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Type de don</legend>
+                    <div class="type-don">
+                        <input type="radio" id="ponctuel" name="type-don" value="ponctuel" checked>
+                        <label for="ponctuel">Don ponctuel</label>
+
+                        <input type="radio" id="mensuel" name="type-don" value="mensuel">
+                        <label for="mensuel">Don mensuel</label>
+                    </div>
+                </fieldset>
+
+                <label for="don-nom">Nom et prénom</label>
+                <input type="text" id="don-nom" name="don-nom" required>
+
+                <label for="don-email">Adresse email</label>
+                <input type="email" id="don-email" name="don-email" required>
+
+                <div class="recu-fiscal">
+                    <input type="checkbox" id="recu" name="recu">
+                    <label for="recu">Je souhaite recevoir mon reçu fiscal par email</label>
+                </div>
+
+                <p class="transparence">100% de votre don est réinvesti dans nos actions de terrain.</p>
+
+                <button type="submit" class="btn-don">Je soutiens la nature</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
