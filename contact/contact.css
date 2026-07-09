@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+header {
+    border-bottom: 1px solid #2E5339;
+}
+
 /* ===== Contours généraux de la page Contact ===== */
 .contact-intro, .contact-form, .don {
     max-width: 600px;
