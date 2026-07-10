@@ -44,7 +44,7 @@ header {
 }
 
 .logo span {
-    color: var(--bg-btn);
+    color: var(--bg-section-titre);
 }
 
 nav {

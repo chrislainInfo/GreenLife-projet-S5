@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact ~ Green Life</title>
-    <link rel="stylesheet" href="./contact.css">
     <link rel="stylesheet" href="../layout.css">
+    <link rel="stylesheet" href="./contact.css">
 </head>
 <body>
+
+    <header>
+        <span class="logo"><span>Green</span>LiFe</span>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="#">Missions</a></li>
+                <li><a href="../evenements/evenements.html">Événements</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <button>Nous Soutenir</button>
+        </nav>
+    </header>
     <main>
         <!-- Section 1: Introduction -->
         <section class="contact-intro">
@@ -23,7 +41,7 @@
         <!-- Section 2: Formulaire de contact -->
         <section class="contact-form">
             <h2>Envoyez-nous un message</h2>
-            <form>
+            <form id="contact">
                 <label for="nom">Nom(s) et prénom(s)</label>
                 <input type="text" id="nom" name="nom" required>
 
@@ -99,6 +117,23 @@
             </form>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <h2>Agissons ensemble pour protéger notre planète !</h2>
+            <p>
+                Notre association lutte quotidiennement contre la déforestation et la pollution. Rejoignez notre mouvement pour préserver la biodiversité et bâtir un avenir durable.
+            </p>
+            
+            <div class="footer-buttons">
+                <a href="#" class="btn btn-primary">Agir avec nous</a>
+                <a href="#" class="btn btn-secondary">Faire un don </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nom de votre Entreprise. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
